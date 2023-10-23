@@ -1,12 +1,21 @@
 var masa;
+var ingredientes;
 
-function comprarMasa (){
-    masa="clásica";
+function app(){
+    comprarMasa();
 }
 
-comprarMasa();
+function comprarMasa (){
+    masa="clásica"; 
+    console.log("Hemos comprado la masa");
+    console.log(masa);
+}
+
+function aniadirIngrediente(){
+
+}
 
 
 
-console.log(masa);
+
 
