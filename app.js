@@ -1,3 +1,6 @@
+import promptSync from 'prompt-sync';
+
+var prompt = promptSync();                 
 var masa= "";
 var ingredientes= [];
 var temperatura= 220;
@@ -34,4 +37,6 @@ function comprarMasa (){
 
 
 app();
+var pizza = prompt('Qué pizza quieres? ');
+console.log("pero si no tenemos " + pizza)
 
