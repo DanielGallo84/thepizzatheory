@@ -1,3 +1,7 @@
+import promptSync from 'prompt-sync';
+
+const prompt = promptSync();
+
 var masa ="";
 var ingredientes=[];
 
@@ -35,11 +39,6 @@ function comprarMasa (){
     console.log("Hemos comprado la masa " + masa);
 }
 
-
-
-
-
-
-
-
 app()
+var pizza = prompt('que pizza quieres?');
+console.log("pero si nosotros no tenemos "+pizza)
