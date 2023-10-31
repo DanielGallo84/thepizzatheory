@@ -3,6 +3,12 @@
     "prompt-sync": "^4.2.0",
     "sass": "^1.69.4"
   },
+<<<<<<< HEAD
   "type":"module"
 
+=======
+  "type": "module"
+  
+>>>>>>> origin/Dani
 }
+

@@ -1,44 +1,42 @@
 import promptSync from 'prompt-sync';
 
-const prompt = promptSync();
+var prompt = promptSync();                 
+var masa= "";
+var ingredientes= [];
+var temperatura= 220;
 
-var masa ="";
-var ingredientes=[];
 
 function app(){
     comprarMasa();
-    aniadirIngrediente("mozarella");
-    aniadirIngrediente("tomate");
-    aniadirIngrediente("peperoni");
-    aniadirIngrediente("champignon");
+    anadirIngrediente("mozzarella");
+    anadirIngrediente("tomate");
+    anadirIngrediente("atun");
+    anadirIngrediente("setas");
     hornear();
     entregar();
-
+   
 }
+
 function hornear(){
     console.log("encender el horno");
-    console.log("precalentar 10 min a 220 grados")
-    console.log("hornear la masa");
-    
-        
+    console.log("precalentar a "+ temperatura + " grados")
+
+    console.log("hornear la pizza");
 }
 function entregar(){
-    console.log("entregar la pizza");
-
+    console.log ("entregar la pizza");
 }
-
-
-function aniadirIngrediente(ingrediente){
-    ingredientes.push(ingrediente); 
-    console.log("hemos aniadido el ingrediente "+ ingrediente);
-
+function anadirIngrediente(ingrediente){
+    ingredientes.push(ingrediente);
+    console.log("hemos añadido el ingrediente " + ingrediente);
 }
-
 function comprarMasa (){
-    masa="clásica"; 
-    console.log("Hemos comprado la masa " + masa);
+    masa="clásica";
 }
 
-app()
-var pizza = prompt('que pizza quieres?');
-console.log("pero si nosotros no tenemos "+pizza)
+comprarMasa();
+
+
+
+console.log(masa);
+
